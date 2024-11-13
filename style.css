@@ -1,0 +1,96 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f7;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #444;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.photo-card {
+  width: 200px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.photo-card p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.photo-card:hover {
+  transform: scale(1.05);
+}
+
+.birthday-card {
+  margin-top: 40px;
+  padding: 20px;
+  background: #ffefd5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.birthday-card h2 {
+  font-size: 1.8rem;
+  color: #d2691e;
+}
+
+.birthday-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .photo-card {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-card {
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .birthday-card h2 {
+    font-size: 1.5rem;
+  }
+}
