@@ -1,43 +1,47 @@
-/* Basic Reset */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f3f4f7;
-  color: #333;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+  max-width: 1000px;
+  width: 100%;
   text-align: center;
 }
 
 h1 {
   margin-bottom: 20px;
-  font-size: 2rem;
-  color: #444;
+  font-size: 2em;
+  color: #333;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
 }
 
 .photo-card {
-  width: 200px;
-  background: white;
+  width: 100%;
+  max-width: 200px;
   padding: 10px;
+  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.2s;
 }
 
 .photo-card img {
@@ -47,8 +51,8 @@ h1 {
 }
 
 .photo-card p {
-  margin-top: 10px;
-  font-size: 0.9rem;
+  margin-top: 8px;
+  font-size: 1em;
   color: #555;
 }
 
@@ -57,40 +61,45 @@ h1 {
 }
 
 .birthday-card {
-  margin-top: 40px;
+  margin-top: 30px;
   padding: 20px;
-  background: #ffefd5;
-  border-radius: 8px;
+  background-color: #ffe0e0;
+  border: 2px solid #ffb3b3;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .birthday-card h2 {
-  font-size: 1.8rem;
-  color: #d2691e;
+  color: #e63946;
+  margin-bottom: 10px;
 }
 
 .birthday-card p {
-  font-size: 1rem;
-  color: #555;
+  color: #333;
+  font-size: 1.1em;
 }
 
-/* Responsive Design */
+/* Responsive design */
 @media (max-width: 768px) {
   .photo-card {
-    width: 150px;
+    max-width: 150px;
   }
 }
 
 @media (max-width: 480px) {
   .photo-card {
-    width: 120px;
+    max-width: 100px;
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 
   .birthday-card h2 {
-    font-size: 1.5rem;
+    font-size: 1.2em;
+  }
+
+  .birthday-card p {
+    font-size: 0.9em;
   }
 }
